@@ -175,30 +175,30 @@ export default function MarjoriesCakes() {
 
       {/* ── HERO ───────────────────────────────────────────────────────────── */}
       <section id="top" className="relative min-h-screen overflow-hidden">
-        {/* TODO: Add a hero photo once available — replace gradient with:
-            <img src="/hero.jpg" alt="M's by Marjorie's freshly baked goods"
-                 className="absolute inset-0 h-full w-full object-cover" />
-            <div className="absolute inset-0 bg-black/40" />
-            Then change text colors to text-white. */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#f7f1e8] via-[#f0e6d0] to-[#e8d4a8]" />
+        <img
+          src="/hero.jpg"
+          alt="M's by Marjorie's freshly baked goods"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/45" />
 
         <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-5 pt-20">
           <div className="max-w-3xl">
-            <p className="text-sm font-bold uppercase tracking-[0.4em] text-[#2f241d]/50">
+            <p className="text-sm font-bold uppercase tracking-[0.4em] text-white/60">
               Parañaque, Philippines
             </p>
 
-            <h1 className="mt-4 font-heading text-6xl font-black leading-none text-[#2f241d] md:text-8xl">
+            <h1 className="mt-4 font-heading text-6xl font-black leading-none text-white md:text-8xl">
               M&apos;s by
               <br />
               Marjorie&apos;s
             </h1>
 
-            <p className="mt-6 text-sm font-bold uppercase tracking-[0.3em] text-[#c8860a]">
+            <p className="mt-6 text-sm font-bold uppercase tracking-[0.3em] text-amber-300">
               Freshly baked home-made pastries and breads
             </p>
 
-            <p className="mt-6 max-w-xl text-xl leading-9 text-[#2f241d]/70">
+            <p className="mt-6 max-w-xl text-xl leading-9 text-white/80">
               Made at home. Baked with care. Add to cart and order via WhatsApp or Facebook.
             </p>
 
@@ -212,7 +212,7 @@ export default function MarjoriesCakes() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="rounded-full border-[#2f241d]/25 bg-white/60 px-7 text-[#2f241d] hover:bg-white/80"
+                  className="rounded-full border-white/40 bg-white/10 px-7 text-white hover:bg-white/20 hover:text-white"
                 >
                   Our Story
                 </Button>
@@ -226,8 +226,7 @@ export default function MarjoriesCakes() {
       <section id="story" className="py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-5 md:grid-cols-2">
           <div className="rounded-[2rem] bg-white p-3 shadow-2xl shadow-[#2f241d]/10">
-            {/* TODO: <img src="/marjorie.jpg" alt="Marjorie" className="aspect-[4/5] w-full rounded-[1.5rem] object-cover" /> */}
-            <PhotoPlaceholder className="aspect-[4/5] w-full rounded-[1.5rem]" label="Add founder / bakery photo here" />
+            <img src="/marjorie.jpg" alt="Marjorie" className="aspect-[4/5] w-full rounded-[1.5rem] object-cover" />
           </div>
 
           <div>
