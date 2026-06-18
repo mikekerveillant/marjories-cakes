@@ -522,7 +522,7 @@ export default function MarjoriesCakes() {
 
             {/* TODO: Add a product photo or bakery sketch here */}
             <PhotoPlaceholder className="mx-auto my-10 aspect-square w-full max-w-[260px] rounded-[1.5rem]" label="Add bakery photo or sketch" />
-
+ 
             <div className="flex flex-col gap-3">
               <a href={facebook} target="_blank" rel="noopener noreferrer">
                 <Button className="w-full rounded-full bg-[#c8860a] px-8 py-6 text-white hover:bg-[#b07508]">
