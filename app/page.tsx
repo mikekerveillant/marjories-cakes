@@ -129,11 +129,7 @@ export default function MarjoriesCakes() {
       <header className="fixed top-0 z-50 w-full border-b border-[#2f241d]/10 bg-[#f7f1e8]/85 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
           <a href="#top" className="flex items-center">
-            {/* TODO: Replace with real logo:
-                <img src="/logo.png" alt="M's by Marjorie's" className="h-10 w-auto" /> */}
-            <span className="font-heading text-xl font-black tracking-tight text-[#2f241d]">
-              M&apos;s by Marjorie&apos;s
-            </span>
+            <img src="/logo.png" alt="M's by Marjorie's" className="h-10 w-auto" />
           </a>
 
           <nav className="hidden items-center gap-7 text-sm font-semibold text-[#2f241d]/70 md:flex">
@@ -262,15 +258,13 @@ export default function MarjoriesCakes() {
       <section className="bg-[#2f241d] py-24 text-white">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-5 md:grid-cols-[1.2fr_0.8fr]">
           <div className="overflow-hidden rounded-[2rem] bg-white/10 p-3">
-            {/* TODO: Add 3–5 cheese rolls photos — replace each PhotoPlaceholder with:
-                <img src="/cheese-rolls-1.jpg" alt="Cheese Rolls"
-                     className="aspect-[4/5] w-72 shrink-0 snap-start rounded-[1.5rem] object-cover md:w-80" /> */}
             <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-3">
-              {[1, 2, 3].map((i) => (
-                <PhotoPlaceholder
-                  key={i}
-                  className="aspect-[4/5] w-72 shrink-0 snap-start rounded-[1.5rem] md:w-80"
-                  label={`Add cheese rolls photo ${i}`}
+              {["/cheese-rolls-1.jpg", "/cheese-rolls-2.jpg", "/cheese-rolls-3.jpg"].map((src) => (
+                <img
+                  key={src}
+                  src={src}
+                  alt="Cheese Rolls"
+                  className="aspect-[4/5] w-72 shrink-0 snap-start rounded-[1.5rem] object-cover md:w-80"
                 />
               ))}
             </div>
@@ -420,19 +414,11 @@ export default function MarjoriesCakes() {
             </p>
           </div>
 
-          {/* TODO: Replace each PhotoPlaceholder with a real photo:
-              <img src="/your-photo.jpg" alt="..." className="h-full w-full object-cover" />
-              Suggested: cheese rolls, ensaymada, cakes, packaging, kitchen. */}
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Cheese rolls or signature bake",
-              "Ensaymada or pastries",
-              "Cake or celebration item",
-              "Gift packaging or polvoron",
-              "Behind-the-scenes / kitchen",
-              "Seasonal special or new item",
-            ].map((label, i) => (
-              <PhotoPlaceholder key={i} className="aspect-square overflow-hidden rounded-[2rem]" label={label} />
+            {["/gallery-1.jpg", "/gallery-2.jpg", "/gallery-3.jpg", "/gallery-4.jpg", "/gallery-5.jpg", "/gallery-6.jpg"].map((src) => (
+              <div key={src} className="aspect-square overflow-hidden rounded-[2rem]">
+                <img src={src} alt="M's by Marjorie's baked goods" className="h-full w-full object-cover" />
+              </div>
             ))}
           </div>
 
